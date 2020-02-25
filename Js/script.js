@@ -9,7 +9,7 @@ window.addEventListener("load",function(e){
     pos_y = b.offsetTop
 });
 
-x.addEventListener("mousemove",function(e){
+b.addEventListener("mousemove",function(e){
     if(clicked){
         pos_x += e.movementX;
         // pos_y += e.movementY;
@@ -18,15 +18,16 @@ x.addEventListener("mousemove",function(e){
     }
 });
 
+x.addEventListener("mouseleave",function(e){
+   clicked = false;
+});
 
+b.addEventListener("mousedown",function(){
+    clicked = true;
+});
 
-x.addEventListener("click",function(){
-    if(clicked == true){
-        clicked = false;  
-    }else{
-        clicked = true;
-    }
-    console.log(clicked);
+b.addEventListener("mouseup",function(){
+    clicked = false;
 });
 
 
