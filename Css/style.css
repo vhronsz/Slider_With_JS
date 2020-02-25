@@ -2,7 +2,8 @@
         display: flex;
         overflow: hidden;
         min-width: 1000px;
-        margin-left: 25%;
+        height: auto;
+        padding: 10px;
     }
 
     #Content{
@@ -12,6 +13,6 @@
         min-height: 100px;
         max-width: 100px;
         max-height: 100px;
-
+        
         background-color: blueviolet;
     }
